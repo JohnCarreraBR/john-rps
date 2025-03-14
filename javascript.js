@@ -90,4 +90,8 @@ function playGame(rounds) {
 let humanScore = 0
 let computerScore = 0
 
-playGame(5)
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+    button.addEventListener("click", playRound)
+})
